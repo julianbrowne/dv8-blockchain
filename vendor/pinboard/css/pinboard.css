@@ -1,0 +1,121 @@
+
+#bcdemo div#frame { 
+	padding-top: 35px;
+	padding-left: 35px;
+	margin: 10px auto;
+}
+
+#bcdemo div#frame a.note {
+	-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out; 
+	-webkit-transition: all .2s ease-in-out; 
+	cursor: pointer;
+	/*display: block;*/
+}
+
+#bcdemo div#frame a:hover.note {
+	border: 1px solid rgba(0,0,0,.75);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#bcdemo .note {
+	width: 250px;
+	height: 200px;
+	box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	display: inline-block;
+	/*float: left;*/
+	margin: 20px;
+	border: 1px solid rgba(0,0,0,.25);
+}
+
+#bcdemo .sticky0 {
+	transform: rotate(-3.5deg);
+	-webkit-transform: rotate(-3.5deg);
+	-moz-transform: rotate(-3.5deg);
+	background-color: #F5F3E8;
+}
+
+#bcdemo .sticky1 {
+	transform: rotate(-3.5deg);
+	-webkit-transform: rotate(-3.5deg);
+	-moz-transform: rotate(-3.5deg);
+	background-color: #F5F3E8;
+}
+
+#bcdemo .sticky2 {
+	transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	background-color: #F5F3E8;
+}
+
+#bcdemo .sticky3 {
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	background-color: #F5F3E8;
+}
+
+#bcdemo .sticky4 {
+	transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	background-color: #F5F3E8;
+}
+
+#bcdemo .sticky5 {
+	transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	background-color: #F5F3E8;
+}
+
+#bcdemo .pin {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.55);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.55);
+	box-shadow: 0 3px 6px rgba(0,0,0,.55);
+	margin: 0 auto;
+	margin-top: 2px;
+}
+
+#bcdemo div#frame a:nth-child(1n) .pin {
+	background-image: -moz-radial-gradient(35px 35px 35deg, circle cover, #F00058 50%, #011020 100%);
+	background-image: -webkit-radial-gradient(35px 35px, circle cover, #F00058, #011020);
+	background-image: radial-gradient(#F00058 50%, #011020 100%);
+
+}
+
+#bcdemo div#frame a:nth-child(6n) .pin {
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, #FE760D 50%, #011020 100%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, #FE760D);
+	background-image: radial-gradient(#FE760D 50%, #011020 100%);
+}
+
+#bcdemo div#frame a:nth-child(3n) .pin {
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, #18C842 50%, #011020 100%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, #18C842, #011020);
+	background-image: radial-gradient(#18C842 50%, #011020 100%);
+}
+
+#bcdemo div#frame a:nth-child(5n+3) .pin,
+#bcdemo div#frame a:last-child .pin {
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, #011020 50%, white 100%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, #011020, white);
+	background-image: radial-gradient(#011020 50%, white 100%);
+}
+
+#bcdemo .text { 
+	color: #000000;
+	background: #FFFFFF;
+	font-family: courier;
+	font-size: 16px;
+	margin-top: -15px;
+}

@@ -1,0 +1,54 @@
+
+<h1>Let's Go Mining</h1>
+<h2>aka 'looking for nonces'</h2>
+
+<div class="control-panel">
+    <img id="mining-start" src="assets/img/mine.png" width="50px">
+    <img id="mining-bitcoin" src="assets/img/bitcoin.png" width="50px">
+    <img id="mining-fail" src="assets/img/fail.png" width="50px">
+</div>
+
+<div class="form-row">
+    <label>top hash</label>
+    <input id="mining-digest" class="wide saved" type="text" value="????">
+</div>
+
+<div class="form-row">
+    <label for="mining-data-01">data</label>
+    <input id="mining-data-01" type="text" class="wide data-entry" value="alice -> bob: 10">
+</div>
+
+<div class="form-row">
+    <label for="mining-data-01-digest">hash</label>
+    <input id="mining-data-01-digest" class="wide info-only digest block-data" type="text" disabled>
+</div>
+
+<div class="form-row">
+    <label for="mining-data-02">data</label>
+    <input id="mining-data-02" type="text" class="wide data-entry" value="charles -> bob: 10">
+</div>
+
+<div class="form-row">
+    <label for="mining-data-02-digest">hash</label>
+    <input id="mining-data-02-digest" class="wide info-only digest block-data" type="text" disabled>
+</div>
+
+<div class="form-row">
+    <label for="mining-data-03">data</label>
+    <input id="mining-data-03" type="text" class="wide data-entry" value="bob -> alice: 5">
+</div>
+
+<div class="form-row">
+    <label for="mining-data-03-digest">hash</label>
+    <input id="mining-data-03-digest" class="wide info-only digest block-data" type="text" disabled>
+</div>
+
+<div class="form-row">
+
+    <label for="mining-nonce-guess">nonce</label>
+    <input id="mining-nonce-guess" class="half-width data-entry" type="text">
+    <input id="mining-nonce-guess-digest" class="wide info-only digest" style="display: none" type="text">
+
+    <label for="mining-hash-target">target</label>
+    <input id="mining-hash-target" class="half-width data-entry" type="text" value="">
+</div>
