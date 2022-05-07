@@ -1,0 +1,347 @@
+
+@import "../template/mixins";
+@import "../template/settings";
+
+$CTNavy: #011020;
+$CTAqua: #15B5D5;
+$CTRed: #F00058;
+$CTOrange: #FE760D;
+$CTGreen: #18C842;
+
+$backgroundColor: $CTNavy;
+$mainColor: #FFFFFF;
+$headingColor: #FFFFFF;
+
+$mainFontSize: 40px;
+$mainFont: 'Avenir', Helvetica, sans-serif;
+$headingFont: 'Avenir', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 1.4em;
+$heading2Size: 1.1em;
+$heading3Size: 1.0em;
+$heading4Size: 0.9em;
+
+$mediumTextSize: 0.8em;
+$smallTextSize: 0.5em;
+$extraSmallTextSize: 0.4em;
+$extraExtraSmallTextSize: 0.3em;
+
+$formDataEntryTextSize: 20px; // px so it doesn't scale down
+
+$blockMargin: 10px;
+$headingMargin: 0;
+
+$leftRightMargin: 80px;
+
+body { 
+	//cursor: url(/assets/img/finger.png) 33 7, auto;
+}
+
+section.present { 
+    height: 100%;
+}
+
+.reveal .title-slide { 
+	padding: 10px;
+	text-align: center;
+}
+
+
+.explainer { 
+	color: $CTAqua;
+	font-size: $mediumTextSize;
+	font-style: italic;
+}
+
+.photo { 
+    margin: 10px 50px;
+	text-align: center;
+}
+
+.bullet-photo img { 
+	float: right;
+    width: 200px;
+}
+
+.reveal .diagram { 
+	background: #FFFFFF;
+	border: 1px solid $CTAqua;
+	margin: 30px 20px;
+}
+
+.reveal .diagram.left { 
+	text-align: left;
+	padding-left: $leftRightMargin;
+}
+
+.reveal .diagram figure { 
+	display: inline-block;
+	width: 100px;
+	vertical-align: top;
+	position: relative;
+    top: 8px;
+}
+
+.reveal .diagram figure figcaption { 
+	color: $CTRed;
+	font-size: $extraSmallTextSize;
+	font-style: italic;
+    top: -20px;
+    position: relative;
+}
+
+.reveal .control-panel { 
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.reveal .control-panel img { 
+	background: #FFFFFF;
+	border: 1px solid $CTOrange;
+	margin: 5px !important;
+	padding: 5px !important;
+	cursor: pointer;
+}
+
+/**
+ *	Form Elements
+**/
+
+/* INPUT */
+
+.reveal .form-row { 
+	text-align: left;
+	//border: 1px solid red;
+}
+
+.reveal .form-row input,
+.reveal .form-row label { 
+	font-size: $formDataEntryTextSize;
+	display: inline-block;
+	text-align: left;
+	width: 60px;
+	padding: 5px;
+	margin: 5px;
+	//border: 1px solid white;
+}
+
+.reveal .form-row label { 
+	width: 80px;
+}
+
+.reveal .form-row label,
+.reveal .form-row input { 
+	vertical-align: top;
+}
+
+.reveal .form-row textarea,
+.reveal .form-row input.wide { 
+	font-size: $formDataEntryTextSize;
+	text-align: left;
+	width: 800px;
+	border: 1px solid $CTAqua;
+}
+
+.reveal .form-row input.half-width { 
+	font-size: $formDataEntryTextSize;
+	text-align: left;
+	width: 330px;
+	border: 1px solid $CTAqua;
+}
+
+.reveal .form-row.centered input { 
+	text-align: center;
+}
+
+.reveal .form-row input.data-entry { 
+	color: #000000;
+	background: #FFFFFF;
+	font-size: $formDataEntryTextSize;
+	border: 1px solid $CTAqua;
+}
+
+/* INPUT: disabled for read only purposes */
+
+.reveal .form-row input.info-only { 
+	color: #FFFFFF;
+	background: $CTAqua;
+	border: 1px solid #FFFFFF;
+}
+
+.reveal .form-row input.transparent { 
+	color: $CTAqua;
+	background: none;
+	border: 1px solid $CTAqua;
+}
+
+.reveal .form-row input.invisible { 
+	color: transparent;
+	background: none;
+	border: 1px solid transparent;
+}
+
+/* INPUT: disabled for read only purposes and mostly static */
+
+.reveal .form-row input.locked { 
+	color: #FFFFFF;
+	background: $CTRed;
+	border: 1px solid #FFFFFF;
+}
+
+.reveal .form-row input.alert { 
+	background: $CTRed !important;
+}
+
+.reveal .form-row input.saved { 
+	color: #FFFFFF;
+	background: $CTOrange;
+	border: 1px solid #FFFFFF;
+}
+
+.reveal .form-row img.input-overlay { 
+	float: right;
+	position: relative;
+	left: -40px;
+	top: 12px;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.reveal section.scrollable { 
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 700px;
+	margin: 15px -300px 15px 15px;
+	padding-right: 300px;
+}
+
+.popup-modal { 
+	display: none;
+	background-color: $CTAqua;
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.popup-modal-content { 
+	background-color: $CTNavy;
+	padding: 20px;
+	border: 1px solid $CTAqua;
+	margin: 50px auto;
+	width: 80%;	
+}
+
+.popup-modal-content img { 
+	max-height:100%;
+	max-width:100%;
+}
+
+@import "../template/theme";
+
+/**
+ *	Headings
+**/
+
+.reveal h1 { 
+	font-size: $heading1Size;
+	margin: 0;
+}
+
+.reveal h2 { 
+	color: $CTAqua;
+	font-size: $heading2Size;
+	position: relative;
+	top: -10px;
+	text-transform: lowercase;
+	font-style: italic;
+}
+
+.reveal h3 { 
+	font-size: $heading3Size;
+    text-align: left;
+    margin-left: $leftRightMargin;
+    margin-top: 30px;
+}
+
+.reveal h1.section-heading { 
+	text-align: center;
+	vertical-align: middle;
+	line-height: 600px;
+}
+
+.reveal .title-slide h1 { 
+	text-transform: uppercase;
+}
+
+.reveal .title-slide h2 { 
+	margin: 20px;
+}
+
+.reveal .title-slide h2 { 
+	color: $CTAqua;
+	font-size: 1em;
+	text-transform: lowercase;
+	font-style: italic;
+	font-weight: normal;
+	position: relative;
+	top: -30px;
+}
+
+/**
+ *	Body Text
+**/
+
+.reveal p { 
+	font-size: $mediumTextSize;
+    margin-left: $leftRightMargin;
+    text-align: left;
+}
+
+.reveal footer { 
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+.reveal footer p { 
+	text-align: center;
+	font-size: $mediumTextSize;
+	margin: 0;
+}
+
+/**
+ *	Bullets
+**/
+
+.reveal ul { 
+	color: white;
+	font-size: $mediumTextSize;
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: $leftRightMargin;
+}
+
+.reveal ul li::marker { 
+	color: white;
+}
+
+//@include light-bg-text-color(#001020);

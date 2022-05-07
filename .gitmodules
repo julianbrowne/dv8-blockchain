@@ -1,0 +1,6 @@
+[submodule "vendor/js-sha256"]
+	path = vendor/js-sha256
+	url = https://github.com/emn178/js-sha256.git
+[submodule "vendor/reveal"]
+	path = vendor/reveal
+	url = https://github.com/hakimel/reveal.js.git
