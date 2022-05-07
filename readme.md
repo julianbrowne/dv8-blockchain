@@ -18,7 +18,7 @@ Originally developed as a presentation for a [Cohaesus](https://cohaesus.co.uk/)
 
 ## Watch
 
-`https://julianbrowne.github.io/dv8-blockchain/`
+Watch on [github pages](https://julianbrowne.github.io/dv8-blockchain/)
 
 ## Run locally
 
